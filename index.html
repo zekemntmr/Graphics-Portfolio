@@ -4,10 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Interface</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="body">Hellooooo!!</h1>
-    <p><a href="https://www.youtube.com/watch?v=Rht8rS4cR1s&list=RD6fIP_pzfd7k&index=27">Multo?</a></p>  
-    <p><a href="https://open.spotify.com/playlist/0JpnKP0joE5AiCKHhoh1bB">Spotify Playlist (Kung mag relapse)</a></p> 
+    <header>
+    <nav class="navbar">
+      <div class="logo">ZekeDesigns</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <section id="home" class="object">
+    <div class="object-content">
+      <h1>Hello, I’m <span>Zeke Montemor</span></h1>
+      <p>A passionate <strong>Graphic Designer</strong> crafting creative visuals and designs.</p>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>My Recent Commissions</h2>
+    <div class="gallery">
+      <div class="item"><img src="photo1.jpg"></div>
+      <div class="item"><img src="photo2.jpg"></div>
+      <div class="item"><img src="photo3.jpg"></div>
+      <div class="item"><img src=""></div>
+      <div class="item"><img src=""></div>
+      <div class="item"><img src=""></div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p class="thankyou-message" style="display:none;">Thanks for reaching out! I’ll get back to you soon.</p>
+  </section>
+
 </body>
 </html>
